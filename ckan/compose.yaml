@@ -1,0 +1,5 @@
+services:
+  ckanapi:
+    build: .
+    volumes: 
+      - "./data:/data"

@@ -1,0 +1,4 @@
+from docker.io/python:3.12-alpine
+RUN pip install ckanapi
+WORKDIR /data
+ENTRYPOINT ckanapi dump datasets --all --datapackages=/data/datos.gob.ar -r http://datos.acumar.gov.ar
